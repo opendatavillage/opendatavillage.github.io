@@ -3,6 +3,7 @@
 
 @import 'bootstrap';
 @import 'fonts';
+@import 'colours';
 
 body {
   font-family: 'Share Tech Mono'
@@ -23,5 +24,40 @@ body {
 
   li:last-child:after {
     content: ' - ';
+  }
+}
+
+$footer-height: 40px;
+
+html {
+  position: relative;
+  min-height: 100%;
+  text-transform: none;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  margin-top: $padding-large-vertical;
+  background: $brand-primary;
+
+  color: white;
+  height: $footer-height;
+
+  padding: $padding-large-vertical $padding-large-horizontal;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 }
