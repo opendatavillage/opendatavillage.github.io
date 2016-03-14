@@ -1,0 +1,18 @@
+---
+---
+
+<div class='splash'>
+
+  <img src='http://brand.theodi.org/logo/basic.svg?primary=fa8100' />
+
+  <p>The Future Home Of Open Data Village, EMFCamp 2016</p>
+  <p>Confirmed attendees</p>
+
+  <ul class='list-inline'>
+  {% for member in site.data.members %}
+    <li>
+      <a href='{{ member.url }}'>{{ member.name }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

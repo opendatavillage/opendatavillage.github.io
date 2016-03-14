@@ -1,0 +1,27 @@
+---
+---
+
+@import 'bootstrap';
+@import 'fonts';
+
+body {
+  font-family: 'Share Tech Mono'
+}
+
+.splash {
+  text-align: center;
+
+  li {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.5em;
+  }
+
+  li:before {
+    content: ' - ';
+  }
+
+  li:last-child:after {
+    content: ' - ';
+  }
+}
