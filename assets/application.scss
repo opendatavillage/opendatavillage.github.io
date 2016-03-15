@@ -6,7 +6,9 @@
 @import 'colours';
 
 body {
-  font-family: 'Share Tech Mono'
+  font-family: 'Share Tech Mono';
+  background: url(/assets/images/real_cf.png);
+  color: $brand-primary;
 }
 
 .splash {
@@ -50,6 +52,7 @@ body {
 
   color: white;
   height: $footer-height;
+  opacity: 0.8;
 
   padding: $padding-large-vertical $padding-large-horizontal;
 
@@ -60,4 +63,13 @@ body {
   a:hover {
     text-decoration: none;
   }
+}
+
+$shadow-offset: 0px;
+$shadow-size: 20px;
+$shadow: drop-shadow($shadow-offset $shadow-offset $shadow-size $brand-primary);
+
+.glowing {
+	-webkit-filter: $shadow;
+	filter: $shadow;
 }
