@@ -11,6 +11,14 @@ body {
   color: $brand-primary;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .splash {
   text-align: center;
 
@@ -50,19 +58,12 @@ body {
   margin-top: $padding-large-vertical;
   background: $brand-primary;
 
-  color: white;
   height: $footer-height;
-  opacity: 0.8;
+  opacity: 1;
 
   padding: $padding-large-vertical $padding-large-horizontal;
 
-  a {
-    color: white;
-  }
 
-  a:hover {
-    text-decoration: none;
-  }
 }
 
 $shadow-offset: 0px;
