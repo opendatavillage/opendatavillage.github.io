@@ -5,8 +5,15 @@ title: Open Data Village
 <div class='splash'>
   <img src='/assets/images/odi.svg' class='glowing' />
 
-  <h1>The Future Home Of Open Data Village, EMFCamp 2016</h1>
+  <h1 id='headline'>The Future Home Of Open Data Village, EMFCamp 2016</h1>
   <p>Confirmed attendees:</p>
 
   {% include members.html %}
 </div>
+
+<script>
+  $(document).ready(function() {
+    var text = 'The Future Home Of Open Data Village, EMFCamp 2016'
+    $('#headline').text(text).hide().fadeIn(1000);
+  })
+</script>

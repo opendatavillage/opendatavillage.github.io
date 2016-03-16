@@ -50,8 +50,9 @@ body {
   margin-bottom: $footer-height;
 }
 
-h1 {
-  font-size: 2em;
+#headline {
+  font-size: 1.7em;
+  margin-top: -10px;
 }
 
 .footer {

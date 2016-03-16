@@ -10,7 +10,8 @@ $(function() {
   ]
 
   while (members.length) {
-    $('#members').append(members.splice(Math.floor(Math.random() * members.length), 1)[0]);
+    m = members.splice(Math.floor(Math.random() * members.length), 1)[0]
+    $('#members').append(m);
   }
 })
 </script>
