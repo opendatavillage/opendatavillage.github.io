@@ -1,16 +1,16 @@
-<ul class='list-inline' id='members'>
-{% for member in site.data.members %}
-  <li>&nbsp;<a href='{{ member.url }}'>{{ member.name }}</a>&nbsp;</li>
-{% endfor %}
-</ul>
+<ul class='list-inline' id='members'></ul>
 
 <script>
 // via http://jsfiddle.net/C6LPY/2/
 $(function() {
-  var parent = $('#members');
-  var divs = parent.children();
-  while (divs.length) {
-    parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+  var members = [
+    {% for member in site.data.members %}
+      '<li>&nbsp;<a href="{{ member.url }}">{{ member.name }}</a>&nbsp;</li>',
+    {% endfor %}
+  ]
+
+  while (members.length) {
+    $('#members').append(members.splice(Math.floor(Math.random() * members.length), 1)[0]);
   }
 })
 </script>

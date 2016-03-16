@@ -1,7 +1,7 @@
 <div class='footer'>
   <ul class='text-center bottom links list-inline'>
     {% for link in site.data.links %}
-      <li><a href='{{ link.url }}' title='{{ link.title }}'>{% if link.fontawesome %}<i class='fa {{ link.fontawesome }}'></i>{% endif %}<span class='hidden-xs'> {{ link.title }}</span></a></li>
+      <li><a href='{{ link.url }}' title='{{ link.title }}'>{% if link.fontawesome %}<i class='fa {{ link.fontawesome }}'></i>{% endif %}<span> {{ link.title }}</span></a></li>
     {% endfor %}
   </ul>
 </div>
