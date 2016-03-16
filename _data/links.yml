@@ -1,3 +1,6 @@
-- title:       Github
-  url:         https://github.com/opendatavillage/
+- title:       Join with a PR!
+  url:         https://github.com/opendatavillage/opendatavillage.github.io/blob/master/_data/members.yml
   fontawesome: fa-github
+
+- title:       EMF Wiki
+  url:         https://wiki.emfcamp.org/wiki/Village:Open_Data_Village

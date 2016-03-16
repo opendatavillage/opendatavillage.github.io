@@ -28,12 +28,12 @@ a:hover {
     font-size: 1.5em;
   }
 
-  li:before {
-    content: ' - ';
+  li:after {
+    content: '-';
   }
 
-  li:last-child:after {
-    content: ' - ';
+  li:first-child:before {
+    content: '-';
   }
 }
 
@@ -59,6 +59,8 @@ h1 {
   bottom: 0;
   width: 100%;
 
+  color: white;
+
   margin-top: $padding-large-vertical;
   background: $brand-primary;
 
@@ -67,7 +69,18 @@ h1 {
 
   padding: $padding-large-vertical $padding-large-horizontal;
 
+  li {
+    padding: 0px;
+    margin: 0px;
+  }
 
+  li:before {
+    content: " | ";
+  }
+
+  li:first-child:before {
+    content: none;
+  }
 }
 
 $shadow-offset: 0px;
