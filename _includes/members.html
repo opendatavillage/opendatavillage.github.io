@@ -1,4 +1,8 @@
-<ul class='list-inline' id='members'></ul>
+<div id='members'>
+  <p>Confirmed attendees:</p>
+
+  <ul class='list-inline'></ul>
+</div>
 
 <script>
 // via http://jsfiddle.net/C6LPY/2/
@@ -11,7 +15,7 @@ $(function() {
 
   while (members.length) {
     m = members.splice(Math.floor(Math.random() * members.length), 1)[0]
-    $('#members').append(m);
+    $('#members ul').append(m);
   }
 })
 </script>
