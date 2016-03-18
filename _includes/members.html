@@ -1,7 +1,6 @@
 <div id='members'>
   <p>Confirmed attendees:</p>
-
-  <ul class='list-inline'></ul>
+  <ul class='list-inline' id='attendees'></ul>
 </div>
 
 <script>
@@ -17,7 +16,12 @@ $(function() {
     m = members.splice(Math.floor(Math.random() * members.length), 1)[0]
     $('#members ul').append(m);
   }
-
   $('#members').hide().fadeIn({{ site.data.attributes.fadeins.members }})
+
+  var count = {{ site.data.attributes.fadeins.members }}
+  $('#attendees').children().each(function() {
+    $(this).hide().fadeIn(count)
+    count = count + {{ site.data.attributes.fadeins.increment }}
+  })
 })
 </script>
