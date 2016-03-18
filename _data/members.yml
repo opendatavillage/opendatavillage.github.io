@@ -1,8 +1,11 @@
-- url: http://pikesley.org
-  name: Sam
+- name: Sam
+  url: http://pikesley.org
 
-- url: http://github.com/chabrowa
-  name: Emilia
+- name: Emilia
+  url: http://github.com/chabrowa
 
-- url: http://floppy.org.uk
-  name: James
+- name: James
+  url: http://floppy.org.uk
+
+- name: Chris
+  url: http://github.com/elsmorian

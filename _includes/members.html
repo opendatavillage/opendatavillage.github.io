@@ -8,7 +8,7 @@
 $(function() {
   var members = [
     {% for member in site.data.members %}
-      '<li>&nbsp;<a href="{{ member.url }}">{{ member.name }}</a>&nbsp;</li>',
+      '<li><a href="{{ member.url }}">{{ member.name }}</a></li> ',
     {% endfor %}
   ]
 
@@ -16,7 +16,7 @@ $(function() {
     m = members.splice(Math.floor(Math.random() * members.length), 1)[0]
     $('#members ul').append(m);
   }
-  $('#members').hide().fadeIn({{ site.data.attributes.fadeins.members }})
+  $('#members').fadeIn({{ site.data.attributes.fadeins.members }})
 
   var count = {{ site.data.attributes.fadeins.members }}
   $('#attendees').children().each(function() {

@@ -29,11 +29,11 @@ a:hover {
   }
 
   li:after {
-    content: '-';
+    content: ']';
   }
 
-  li:first-child:before {
-    content: '-';
+  li:before {
+    content: '[';
   }
 }
 
@@ -130,4 +130,9 @@ $shadow: drop-shadow($shadow-offset $shadow-offset $shadow-size $brand-primary);
   margin: 0 auto;
   padding: 0;
   left: 0;
+  display: none;
+}
+
+.container {
+  display: none;
 }
