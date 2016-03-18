@@ -1,12 +1,13 @@
 <div id='badge'>
   <img src='/assets/images/odi.svg' class='glowing' id='logo'/>
-  <h1 id='big-headline' class='headline hidden-xs'></h1>
-  <h1 id='small-headline' class='headline hidden-md hidden-sm hidden-lg'></h1>
+  <h1 id='big-slogan' class='slogan hidden-xs'></h1>
+  <h1 id='small-slogan' class='slogan hidden-md hidden-sm hidden-lg'></h1>
 </div>
 
 <script>
   $(document).ready(function() {
     var text = 'The Future Home Of Open Data Village, EMFCamp 2016'
-    $('.headline').text(text).hide().fadeIn(3000);
+    $('.slogan').text(text).hide().fadeIn({{ site.data.attributes.fadeins.slogan }})
+    $('#logo').fadeIn({{ site.data.attributes.fadeins.logo }})
   })
 </script>
