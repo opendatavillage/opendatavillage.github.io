@@ -64,6 +64,7 @@ body {
   top: 0;
   left: 0;
   display: none;
+  opacity: $opacity;
 }
 
 #big-slogan, #small-slogan {
@@ -94,7 +95,7 @@ body {
   background: $brand-primary;
 
   height: $footer-height;
-  opacity: 1;
+  opacity: $opacity;
 
   padding: $padding-large-vertical $padding-large-horizontal;
 
