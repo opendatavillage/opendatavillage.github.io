@@ -10,4 +10,9 @@
     $('.slogan').text(text).hide().fadeIn({{ site.data.attributes.fadeins.slogan }})
     $('#logo').fadeIn({{ site.data.attributes.fadeins.logo }})
   })
+
+  $('#logo').hover(
+    function(){ $(this).addClass('super-glowing') },
+    function(){ $(this).removeClass('super-glowing') }
+  )
 </script>
