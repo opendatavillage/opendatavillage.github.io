@@ -4,3 +4,4 @@ fadeins:
   members: 4000
   increment: 2000
   footer: 3000
+  navbar: 3000
