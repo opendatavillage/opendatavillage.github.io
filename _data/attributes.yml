@@ -2,6 +2,6 @@ fadeins:
   logo: 3000
   slogan: 2000
   members: 4000
-  increment: 2000
+  increment: 500
   footer: 3000
   navbar: 3000
