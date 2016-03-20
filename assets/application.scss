@@ -141,6 +141,7 @@ $shadow: drop-shadow($shadow-offset $shadow-offset $shadow-size $brand-primary);
 
 nav {
   background-color: $brand-primary;
+  display: none;
 }
 
 .navbar-default .navbar-nav > .active > a {
